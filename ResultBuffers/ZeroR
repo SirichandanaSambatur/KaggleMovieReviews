@@ -1,0 +1,46 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR 
+Relation:     trainWeka-weka.filters.unsupervised.attribute.NumericToNominal-R2-202
+Instances:    5000
+Attributes:   202
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: 2
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2608               52.16   %
+Incorrectly Classified Instances      2392               47.84   %
+Kappa statistic                          0     
+Mean absolute error                      0.2606
+Root mean squared error                  0.361 
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.494     0.043     0
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.498     0.169     1
+                 1.000    1.000    0.522      1.000    0.686      0.000    0.499     0.521     2
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.500     0.206     3
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.497     0.060     4
+Weighted Avg.    0.522    0.522    0.272      0.522    0.358      0.000    0.499     0.348     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+    0    0  215    0    0 |    a = 0
+    0    0  845    0    0 |    b = 1
+    0    0 2608    0    0 |    c = 2
+    0    0 1030    0    0 |    d = 3
+    0    0  302    0    0 |    e = 4
+

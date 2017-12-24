@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     trainWeka-weka.filters.unsupervised.attribute.NumericToNominal-R2-202
+Instances:    5000
+Attributes:   202
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+
+Time taken to build model: 10.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2412               48.24   %
+Incorrectly Classified Instances      2588               51.76   %
+Kappa statistic                          0.0009
+Mean absolute error                      0.2578
+Root mean squared error                  0.3714
+Relative absolute error                 98.9097 %
+Root relative squared error            102.8894 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.005    0.004    0.045      0.005    0.008      0.001    0.547     0.054     0
+                 0.052    0.049    0.179      0.052    0.081      0.006    0.523     0.182     1
+                 0.886    0.883    0.523      0.886    0.657      0.005    0.514     0.538     2
+                 0.054    0.059    0.192      0.054    0.085      -0.008   0.494     0.205     3
+                 0.003    0.004    0.050      0.003    0.006      -0.003   0.540     0.070     4
+Weighted Avg.    0.482    0.481    0.347      0.482    0.375      0.002    0.514     0.360     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+    1    7  190   17    0 |    a = 0
+    3   44  752   43    3 |    b = 1
+   12  120 2310  154   12 |    c = 2
+    3   57  910   56    4 |    d = 3
+    3   18  259   21    1 |    e = 4
+
